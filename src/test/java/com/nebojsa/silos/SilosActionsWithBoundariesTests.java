@@ -36,7 +36,7 @@ public class SilosActionsWithBoundariesTests {
     HttpEntity<SiloDto> siloSecondEntity = new HttpEntity<>(siloDtoSecond, headers);
 
     @Test
-    public void testFillActionWithUpdate() {
+    public void testActionWithBoundaries() {
         //create silos
         ResponseEntity<SiloDto> responseSiloFirst = restTemplate.exchange(
                 createURLWithPort("/silo/create"), HttpMethod.POST, siloFirstEntity, SiloDto.class);

@@ -24,7 +24,7 @@ import static org.junit.Assert.assertTrue;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-public class SilosActionsWithUpdatesTests {
+public class SilosActionsWithUpdatesAndHistoryTests {
 
     @LocalServerPort
     private int port;
